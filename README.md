@@ -58,13 +58,11 @@ Se abre el fichero web/w_config.php y se modifican, al menos, los siguientes val
     // contraseña por defecto para la cuenta Admin
     $confadminpass
     // dirección de correo del administrador
-    $confmail = 'adminmail@localhost';
+    $confmail
     
     // nombre del juego
-    $conftitle = 'Partida de LifoSource';
-    // nombre del administrador
-    $confadminname = 'NOMBRE APELLIDOS REALES';
-    
+    $conftitle
+
     // aviso legal
     $confavisolegal
 
@@ -88,3 +86,5 @@ Una vez creada la partida, es MUY IMPORTANTE eliminar el directorio emerge; si n
 
 
 La partida ya está abierta y disponible.
+
+Se ha creado un jugador llamado Admin con la contraseña indicada en $confadminpass.
