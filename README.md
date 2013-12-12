@@ -1,7 +1,9 @@
 LifoSource
 ==========
 
-Source code of the web-based MMORPG Lifo
+Código fuente del juego de rol online Lifo.  
+Copyright (c) 2006-2013, Luis Quesada - https://github.com/lquesada
+
 Cómo montar una partida de LifoSource...
 
 Esta versión de LifoSource tiene algunas diferencias respecto a Lifo:
@@ -10,6 +12,7 @@ Esta versión de LifoSource tiene algunas diferencias respecto a Lifo:
 - Hay objetos para los que no se incluyen gráficos.
 
 Paso 1. Servidores web y MySQL.
+-------------------------------
 
 Es necesario instalar los siguientes paquetes:
 - apache2
@@ -19,56 +22,63 @@ Es necesario instalar los siguientes paquetes:
 - php5-mysql
 
 Paso 2. Creación de la base de datos.
+-------------------------------------
 
-Seguidamente, debe crearse la base de datos y un usuario en MySQL para la partida de LifoSource. Se puede hacer conectando como administrador (mysql -uroot -pPASSWORDROOT) y con las siguientes órdenes, cambiando los valores en mayúsculas:
+Seguidamente, debe crearse la base de datos y un usuario en MySQL para la partida de LifoSource.
 
-mysql> create database DATABASENAME;
-mysql> grant usage on *.* to USERNAME@% identified by 'PASSWORDLIFOSOURCE';
-mysql> grant all privileges on DATABASENAME.* to USERNAME@%;
+Se puede hacer conectando como administrador (mysql -uroot -pPASSWORDROOT) y con las siguientes órdenes, cambiando los valores en mayúsculas:
 
-Paso 3. Configuración de la partida de LifoSource
+    mysql> create database DATABASENAME;
+    mysql> grant usage on *.* to USERNAME@% identified by 'PASSWORDLIFOSOURCE';
+    mysql> grant all privileges on DATABASENAME.* to USERNAME@%;
+
+Paso 3. Configuración de la partida de LifoSource.
+--------------------------------------------------
 
 Se abre el fichero web/w_config.php y se modifican, al menos, los siguientes valores:
 
-  // dirección raiz de la partida, debe ser accesible desde fuera.
-  $root
-
-  // host del servidor MySQL
-  $confdbhost 
-  // puerto del servidor MySQL
-  $confdbport
-  // usuario para el servidor MySQL
-  $confdbuser
-  // contraseña para el usuario
-  $confdbpass
-  // nombre de la base de datos
-  $confdbname
-
-  // cadena de texto con cualquier valor para mejorar el cifrado de las contraseñas
-  // NO CAMBIAR despues de hacer el emerge
-  $confpwdsalt
-
-  // contraseña por defecto para la cuenta Admin
-  $confadminpass
-  // dirección de correo del administrador
-  $confmail = 'adminmail@localhost';
-
-  // nombre del juego
-  $conftitle = 'Partida de LifoSource';
-  // nombre del administrador
-  $confadminname = 'NOMBRE APELLIDOS REALES';
-
-  // aviso legal
-  $confavisolegal
+    // dirección raiz de la partida, debe ser accesible desde fuera.
+    $root
+    
+    // host del servidor MySQL
+    $confdbhost 
+    // puerto del servidor MySQL
+    $confdbport
+    // usuario para el servidor MySQL
+    $confdbuser
+    // contraseña para el usuario
+    $confdbpass
+    // nombre de la base de datos
+    $confdbname
+    
+    // cadena de texto con cualquier valor para mejorar el cifrado de las contraseñas
+    // NO CAMBIAR despues de hacer el emerge
+    $confpwdsalt
+    
+    // contraseña por defecto para la cuenta Admin
+    $confadminpass
+    // dirección de correo del administrador
+    $confmail = 'adminmail@localhost';
+    
+    // nombre del juego
+    $conftitle = 'Partida de LifoSource';
+    // nombre del administrador
+    $confadminname = 'NOMBRE APELLIDOS REALES';
+    
+    // aviso legal
+    $confavisolegal
 
 Es sumamente importante que modifiques la contraseña del administrador.
+
 No des acceso de administrador a nadie, la página de administración no es segura.
 
-Paso 4. Instalación de los ficheros de la web
+Paso 4. Instalación de los ficheros de la web.
+----------------------------------------------
 
 Se copian los ficheros del directorio web al directorio público del servidor, por ejemplo, /var/www.
 
-Paso 5. Instanciación de la partida
+Paso 5. Instanciación de la partida.
+------------------------------------
 
 Se abre desde un navegador el fichero emerge/emerge.php a través del servidor apache.
 
