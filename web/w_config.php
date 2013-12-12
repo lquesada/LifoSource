@@ -24,8 +24,6 @@
   
   // nombre del juego
   $conftitle = 'Partida de LifoSource';
-  // nombre del administrador
-  $confadminname = 'NOMBRE APELLIDOS REALES';
   
   // aviso legal
   $confavisolegal = 'Para dar cumplimiento con lo establecido en la Ley 34/2006, de 11 de Enero, de Servicios de la Sociedad de la Información y de Comercio Electrónico, a continuación se proporciona la información correspondiente a este sitio web: <br/>
