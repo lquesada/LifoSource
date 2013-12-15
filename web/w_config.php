@@ -121,6 +121,8 @@ Este sitio esta sometido a las leyes europeas. La accesibilidad del lugar a meno
   // Intervalo en segundos entre explorarm jugadores premium
   $confnoexplorarhastapremium = 1800;
 
+  // Número de elementos a mostrar en cada página de fabricar.
+  $confmuestrafabricar = 1000;
 
 
 
