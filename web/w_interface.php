@@ -194,7 +194,7 @@ function iface() {
     iweb();
   echo $confcontentbeffooter;
   //NO MODIFICAR
-  echo '<div id="rights">Copyright 2006-2014. Todos los derechos reservados. <a href="/avisolegal.php" rel="external">Aviso legal</a>. Este proyecto es libre, puedes obtener el <a href="https://github.com/lquesada" rel="external">código fuente</a><br/><br/><a href="http:/'.'/validator.w3.org/check?uri=referer" rel="external"><img src="'.$imgroot.'img/xhtml.png" alt="Valid XHTML 1.0 Strict" height="31" width="88"/></a> <a href="http:/'.'/jigsaw.w3.org/css-validator/check/referer" rel="external"><img height="31" width="88" src="'.$imgroot.'img/css.png" alt="Valid CSS"/></a></div>';
+  echo '<div id="rights">Copyright 2006-2014. Todos los derechos reservados. <a href="avisolegal.php" rel="external">Aviso legal</a>.<br/>El proyecto LifoSource es libre, puedes obtener el código fuente <a href="https://github.com/lquesada" rel="external">aquí</a>.</div>';
   echo "{$confcontentend}";
   echo "</div></body></html>";
 }
