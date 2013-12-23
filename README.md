@@ -29,8 +29,8 @@ Seguidamente, debe crearse la base de datos y un usuario en MySQL para la partid
 Se puede hacer conectando como administrador (mysql -uroot -pPASSWORDROOT) y con las siguientes órdenes, cambiando los valores en mayúsculas:
 
     mysql> create database DATABASENAME;
-    mysql> grant usage on *.* to USERNAME@% identified by 'PASSWORDLIFOSOURCE';
-    mysql> grant all privileges on DATABASENAME.* to USERNAME@%;
+    mysql> grant usage on *.* to USERNAME@'%' identified by 'PASSWORDLIFOSOURCE';
+    mysql> grant all privileges on DATABASENAME.* to USERNAME@'%';
 
 Paso 3. Configuración de la partida de LifoSource.
 --------------------------------------------------
