@@ -1,4 +1,11 @@
 <?php
+foreach (array_keys($_GET) as $clave) {
+    $_REQUEST[$clave] = $_GET[$clave];
+}
+foreach (array_keys($_POST) as $clave) {
+    $_REQUEST[$clave] = $_POST[$clave];
+}
+
 ini_set('display_errors',0);
 ini_set('log_errors',1);
 include('w_aux.php');
