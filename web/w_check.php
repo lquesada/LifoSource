@@ -20,7 +20,7 @@ function check_clan($clan) {
 }
 
 function check_subject($subject) {
-  return htmlentities(trim($subject));
+  return htmlentities(trim($subject),ENT_COMPAT,"ISO-8859-1");
 }
 
 /* check_email(email) Transforma y comprueba si una dirección e-mail es válida o no. Devuelve el email si es válido. Puede no ser válido por contener caracteres inválidos, no tener forma de email válido, o por ser más largo que 80 caracteres. */
@@ -41,6 +41,6 @@ return $password;
 
 function check_text($mensaje) {
   $mensaje = trim($mensaje);
-  return htmlentities(addslashes(wordwrap(trim(stripslashes($mensaje)),50,' ',1)));
+  return htmlentities(addslashes(wordwrap(trim(stripslashes($mensaje)),50,' ',1)),ENT_COMPAT,"ISO-8859-1");
 }
 ?>
