@@ -1,8 +1,11 @@
 LifoSource
 ==========
 
-Código fuente del juego de rol online Lifo.  
-Copyright (c) 2006-2013, Luis Quesada - https://github.com/lquesada
+Código fuente del juego de rol online Lifo.
+
+Source code for the multiplayer online roleplaying game Lifo (in Spanish).
+
+Copyright (c) 2006-2013, Luis Quesada Torres - https://github.com/lquesada | www.luisquesada.com
 
 Cómo montar una partida de LifoSource...
 
